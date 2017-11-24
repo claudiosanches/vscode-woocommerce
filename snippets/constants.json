@@ -1,0 +1,112 @@
+{
+    "WC_PLUGIN_FILE": {
+        "prefix": "WC_PLUGIN_FILE",
+        "body": "WC_PLUGIN_FILE",
+        "description": "Constant: WC_PLUGIN_FILE"
+    },
+    "WC_DOING_AJAX": {
+        "prefix": "WC_DOING_AJAX",
+        "body": "WC_DOING_AJAX",
+        "description": "Constant: WC_DOING_AJAX"
+    },
+    "WOOCOMMERCE_CART": {
+        "prefix": "WOOCOMMERCE_CART",
+        "body": "WOOCOMMERCE_CART",
+        "description": "Constant: WOOCOMMERCE_CART"
+    },
+    "WOOCOMMERCE_CHECKOUT": {
+        "prefix": "WOOCOMMERCE_CHECKOUT",
+        "body": "WOOCOMMERCE_CHECKOUT",
+        "description": "Constant: WOOCOMMERCE_CHECKOUT"
+    },
+    "WC_MAX_LINKED_VARIATIONS": {
+        "prefix": "WC_MAX_LINKED_VARIATIONS",
+        "body": "WC_MAX_LINKED_VARIATIONS",
+        "description": "Constant: WC_MAX_LINKED_VARIATIONS"
+    },
+    "WC_UPDATING": {
+        "prefix": "WC_UPDATING",
+        "body": "WC_UPDATING",
+        "description": "Constant: WC_UPDATING"
+    },
+    "WC_INSTALLING": {
+        "prefix": "WC_INSTALLING",
+        "body": "WC_INSTALLING",
+        "description": "Constant: WC_INSTALLING"
+    },
+    "WC_API_REQUEST": {
+        "prefix": "WC_API_REQUEST",
+        "body": "WC_API_REQUEST",
+        "description": "Constant: WC_API_REQUEST"
+    },
+    "WC_API_REQUEST_VERSION": {
+        "prefix": "WC_API_REQUEST_VERSION",
+        "body": "WC_API_REQUEST_VERSION",
+        "description": "Constant: WC_API_REQUEST_VERSION"
+    },
+    "WC_ABSPATH": {
+        "prefix": "WC_ABSPATH",
+        "body": "WC_ABSPATH",
+        "description": "Constant: WC_ABSPATH"
+    },
+    "WC_PLUGIN_BASENAME": {
+        "prefix": "WC_PLUGIN_BASENAME",
+        "body": "WC_PLUGIN_BASENAME",
+        "description": "Constant: WC_PLUGIN_BASENAME"
+    },
+    "WC_VERSION": {
+        "prefix": "WC_VERSION",
+        "body": "WC_VERSION",
+        "description": "Constant: WC_VERSION"
+    },
+    "WOOCOMMERCE_VERSION": {
+        "prefix": "WOOCOMMERCE_VERSION",
+        "body": "WOOCOMMERCE_VERSION",
+        "description": "Constant: WOOCOMMERCE_VERSION"
+    },
+    "WC_ROUNDING_PRECISION": {
+        "prefix": "WC_ROUNDING_PRECISION",
+        "body": "WC_ROUNDING_PRECISION",
+        "description": "Constant: WC_ROUNDING_PRECISION"
+    },
+    "WC_DISCOUNT_ROUNDING_MODE": {
+        "prefix": "WC_DISCOUNT_ROUNDING_MODE",
+        "body": "WC_DISCOUNT_ROUNDING_MODE",
+        "description": "Constant: WC_DISCOUNT_ROUNDING_MODE"
+    },
+    "WC_TAX_ROUNDING_MODE": {
+        "prefix": "WC_TAX_ROUNDING_MODE",
+        "body": "WC_TAX_ROUNDING_MODE",
+        "description": "Constant: WC_TAX_ROUNDING_MODE"
+    },
+    "WC_DELIMITER": {
+        "prefix": "WC_DELIMITER",
+        "body": "WC_DELIMITER",
+        "description": "Constant: WC_DELIMITER"
+    },
+    "WC_LOG_DIR": {
+        "prefix": "WC_LOG_DIR",
+        "body": "WC_LOG_DIR",
+        "description": "Constant: WC_LOG_DIR"
+    },
+    "WC_SESSION_CACHE_GROUP": {
+        "prefix": "WC_SESSION_CACHE_GROUP",
+        "body": "WC_SESSION_CACHE_GROUP",
+        "description": "Constant: WC_SESSION_CACHE_GROUP"
+    },
+    "WC_TEMPLATE_DEBUG_MODE": {
+        "prefix": "WC_TEMPLATE_DEBUG_MODE",
+        "body": "WC_TEMPLATE_DEBUG_MODE",
+        "description": "Constant: WC_TEMPLATE_DEBUG_MODE"
+    },
+    "WC_TEMPLATE_PATH": {
+        "prefix": "WC_TEMPLATE_PATH",
+        "body": "WC_TEMPLATE_PATH",
+        "description": "Constant: WC_TEMPLATE_PATH"
+    },
+    "WC_USE_TRANSACTIONS": {
+        "prefix": "WC_USE_TRANSACTIONS",
+        "body": "WC_USE_TRANSACTIONS",
+        "description": "Constant: WC_USE_TRANSACTIONS"
+    }
+}

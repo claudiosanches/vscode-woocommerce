@@ -1,0 +1,50 @@
+{
+    "name": "woocommerce",
+    "displayName": "WooCommerce - Snippets & autocomplete",
+    "description": "A collection of WooCommerce snippets and autocompletions.",
+    "version": "1.0.0",
+    "publisher": "claudiosanches",
+    "author": {
+        "name": "Claudio Sanches"
+    },
+    "license": "GPLv3",
+    "homepage": "https://github.com/claudiosanches/vscode-woocommerce",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/claudiosanches/vscode-woocommerce"
+    },
+    "bugs": {
+        "url": "https://github.com/claudiosanches/vscode-woocommerce/issues"
+    },
+    "icon": "images/icon.png",
+    "engines": {
+        "vscode": "^1.18.0"
+    },
+    "keywords": [
+        "php",
+        "wordpress"
+    ],
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "php",
+                "path": "./snippets/functions.json"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/actions.json"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/filters.json"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/constants.json"
+            }
+        ]
+    }
+}
