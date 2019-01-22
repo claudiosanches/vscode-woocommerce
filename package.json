@@ -2,7 +2,7 @@
     "name": "woocommerce",
     "displayName": "WooCommerce - Snippets & autocomplete",
     "description": "A collection of WooCommerce snippets and autocompletions.",
-    "version": "1.1.0",
+    "version": "1.0.0",
     "publisher": "claudiosanches",
     "author": {
         "name": "Claudio Sanches"
