@@ -1,6 +1,6 @@
 # WooCommerce - Snippets & autocomplete
 
-This extension for Visual Studio Code adds [WooCommerce](https://wordpress.org/woocommerce) snippets and autocomplition of functions, classes and hooks.
+This extension for Visual Studio Code adds [WooCommerce](https://wordpress.org/woocommerce) snippets and autocompletion of functions, classes and hooks.
 
 ![Demo](images/demo.gif)
 
