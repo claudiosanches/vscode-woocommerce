@@ -29,20 +29,15 @@
         "body": "WC_UPDATING",
         "description": "Constant: WC_UPDATING"
     },
+    "WC_CHUNK_SIZE": {
+        "prefix": "WC_CHUNK_SIZE",
+        "body": "WC_CHUNK_SIZE",
+        "description": "Constant: WC_CHUNK_SIZE"
+    },
     "WC_INSTALLING": {
         "prefix": "WC_INSTALLING",
         "body": "WC_INSTALLING",
         "description": "Constant: WC_INSTALLING"
-    },
-    "WC_API_REQUEST": {
-        "prefix": "WC_API_REQUEST",
-        "body": "WC_API_REQUEST",
-        "description": "Constant: WC_API_REQUEST"
-    },
-    "WC_API_REQUEST_VERSION": {
-        "prefix": "WC_API_REQUEST_VERSION",
-        "body": "WC_API_REQUEST_VERSION",
-        "description": "Constant: WC_API_REQUEST_VERSION"
     },
     "WC_ABSPATH": {
         "prefix": "WC_ABSPATH",

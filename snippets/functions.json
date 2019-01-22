@@ -139,6 +139,11 @@
         "body": "wc_get_attribute_types()",
         "description": "Get attribute types."
     },
+    "wc_has_custom_attribute_types": {
+        "prefix": "wc_has_custom_attribute_types",
+        "body": "wc_has_custom_attribute_types()",
+        "description": "Check if there are custom attribute types."
+    },
     "wc_get_attribute_type_label": {
         "prefix": "wc_get_attribute_type_label",
         "body": "wc_get_attribute_type_label( ${1:type} )",
@@ -217,7 +222,7 @@
     "wc_format_list_of_items": {
         "prefix": "wc_format_list_of_items",
         "body": "wc_format_list_of_items( ${1:items} )",
-        "description": "Comma separate a list of item names, and replace final comma with 'and'"
+        "description": "Comma separate a list of item names, and replace final comma with 'and'."
     },
     "wc_clear_cart_after_payment": {
         "prefix": "wc_clear_cart_after_payment",
@@ -289,65 +294,70 @@
         "body": "wc_shipping_methods_have_changed( ${1:key}, ${2:package} )",
         "description": "See if the methods have changed since the last request."
     },
+    "wc_get_cart_item_data_hash": {
+        "prefix": "wc_get_cart_item_data_hash",
+        "body": "wc_get_cart_item_data_hash( ${1:product} )",
+        "description": "Gets a hash of important product data that when changed should cause cart items to be invalidated."
+    },
     "is_woocommerce": {
         "prefix": "is_woocommerce",
         "body": "is_woocommerce()",
-        "description": "is_woocommerce - Returns true if on a page which uses WooCommerce templates (cart and checkout are standard pages with shortcodes and thus are not included)."
+        "description": "Is_woocommerce - Returns true if on a page which uses WooCommerce templates (cart and checkout are standard pages with shortcodes and thus are not included)."
     },
     "is_shop": {
         "prefix": "is_shop",
         "body": "is_shop()",
-        "description": "is_shop - Returns true when viewing the product type archive (shop)."
+        "description": "Is_shop - Returns true when viewing the product type archive (shop)."
     },
     "is_product_taxonomy": {
         "prefix": "is_product_taxonomy",
         "body": "is_product_taxonomy()",
-        "description": "is_product_taxonomy - Returns true when viewing a product taxonomy archive."
+        "description": "Is_product_taxonomy - Returns true when viewing a product taxonomy archive."
     },
     "is_product_category": {
         "prefix": "is_product_category",
         "body": "is_product_category( ${1:term} )",
-        "description": "is_product_category - Returns true when viewing a product category."
+        "description": "Is_product_category - Returns true when viewing a product category."
     },
     "is_product_tag": {
         "prefix": "is_product_tag",
         "body": "is_product_tag( ${1:term} )",
-        "description": "is_product_tag - Returns true when viewing a product tag."
+        "description": "Is_product_tag - Returns true when viewing a product tag."
     },
     "is_product": {
         "prefix": "is_product",
         "body": "is_product()",
-        "description": "is_product - Returns true when viewing a single product."
+        "description": "Is_product - Returns true when viewing a single product."
     },
     "is_cart": {
         "prefix": "is_cart",
         "body": "is_cart()",
-        "description": "is_cart - Returns true when viewing the cart page."
+        "description": "Is_cart - Returns true when viewing the cart page."
     },
     "is_checkout": {
         "prefix": "is_checkout",
         "body": "is_checkout()",
-        "description": "is_checkout - Returns true when viewing the checkout page."
+        "description": "Is_checkout - Returns true when viewing the checkout page."
     },
     "is_checkout_pay_page": {
         "prefix": "is_checkout_pay_page",
         "body": "is_checkout_pay_page()",
-        "description": "is_checkout_pay - Returns true when viewing the checkout's pay page."
+        "description": "Is_checkout_pay - Returns true when viewing the checkout's pay page."
     },
     "is_wc_endpoint_url": {
         "prefix": "is_wc_endpoint_url",
         "body": "is_wc_endpoint_url( ${1:endpoint} )",
-        "description": "is_wc_endpoint_url - Check if an endpoint is showing."
+        "description": "Is_wc_endpoint_url - Check if an endpoint is showing."
     },
     "is_account_page": {
         "prefix": "is_account_page",
         "body": "is_account_page()",
-        "description": "is_account_page - Returns true when viewing an account page."
+        "description": "Is_account_page - Returns true when viewing an account page."
     },
     "is_view_order_page": {
         "prefix": "is_view_order_page",
         "body": "is_view_order_page()",
-        "description": "is_view_order_page - Returns true when on the view order page."
+        "description": "Is_view_order_page - Returns true when on the view order page."
     },
     "is_edit_account_page": {
         "prefix": "is_edit_account_page",
@@ -357,32 +367,32 @@
     "is_order_received_page": {
         "prefix": "is_order_received_page",
         "body": "is_order_received_page()",
-        "description": "is_order_received_page - Returns true when viewing the order received page."
+        "description": "Is_order_received_page - Returns true when viewing the order received page."
     },
     "is_add_payment_method_page": {
         "prefix": "is_add_payment_method_page",
         "body": "is_add_payment_method_page()",
-        "description": "is_add_payment_method_page - Returns true when viewing the add payment method page."
+        "description": "Is_add_payment_method_page - Returns true when viewing the add payment method page."
     },
     "is_lost_password_page": {
         "prefix": "is_lost_password_page",
         "body": "is_lost_password_page()",
-        "description": "is_lost_password_page - Returns true when viewing the lost password page."
+        "description": "Is_lost_password_page - Returns true when viewing the lost password page."
     },
     "is_ajax": {
         "prefix": "is_ajax",
         "body": "is_ajax()",
-        "description": "is_ajax - Returns true when the page is loaded via ajax."
+        "description": "Is_ajax - Returns true when the page is loaded via ajax."
     },
     "is_store_notice_showing": {
         "prefix": "is_store_notice_showing",
         "body": "is_store_notice_showing()",
-        "description": "is_store_notice_showing - Returns true when store notice is active."
+        "description": "Is_store_notice_showing - Returns true when store notice is active."
     },
     "is_filtered": {
         "prefix": "is_filtered",
         "body": "is_filtered()",
-        "description": "is_filtered - Returns true when filtering products using layered nav or price sliders."
+        "description": "Is_filtered - Returns true when filtering products using layered nav or price sliders."
     },
     "taxonomy_is_product_attribute": {
         "prefix": "taxonomy_is_product_attribute",
@@ -408,11 +418,6 @@
         "prefix": "wc_prices_include_tax",
         "body": "wc_prices_include_tax()",
         "description": "Are prices inclusive of tax?"
-    },
-    "wc_is_webhook_valid_topic": {
-        "prefix": "wc_is_webhook_valid_topic",
-        "body": "wc_is_webhook_valid_topic( ${1:topic} )",
-        "description": "Check if the given topic is a valid webhook topic, a topic is valid if:"
     },
     "wc_is_valid_url": {
         "prefix": "wc_is_valid_url",
@@ -489,10 +494,15 @@
         "body": "wc_mail( ${1:to}, ${2:subject}, ${3:message}${4:, ${5:headers}${6:, ${7:attachments}}} )",
         "description": "Send HTML emails from WooCommerce."
     },
+    "wc_get_theme_support": {
+        "prefix": "wc_get_theme_support",
+        "body": "wc_get_theme_support( ${1:${2:prop}${3:, ${4:default}}} )",
+        "description": "Return \"theme support\" values from the current theme, if set."
+    },
     "wc_get_image_size": {
         "prefix": "wc_get_image_size",
         "body": "wc_get_image_size( ${1:image_size} )",
-        "description": "Get an image size."
+        "description": "Get an image size by name or defined dimensions."
     },
     "wc_enqueue_js": {
         "prefix": "wc_enqueue_js",
@@ -519,6 +529,11 @@
         "body": "wc_get_log_file_path( ${1:handle} )",
         "description": "Get a log file path."
     },
+    "wc_get_log_file_name": {
+        "prefix": "wc_get_log_file_name",
+        "body": "wc_get_log_file_name( ${1:handle} )",
+        "description": "Get a log file name."
+    },
     "wc_get_page_children": {
         "prefix": "wc_get_page_children",
         "body": "wc_get_page_children( ${1:page_id} )",
@@ -543,16 +558,6 @@
         "prefix": "wc_ms_protect_download_rewite_rules",
         "body": "wc_ms_protect_download_rewite_rules( ${1:rewrite} )",
         "description": "Protect downloads from ms-files.php in multisite."
-    },
-    "wc_get_core_supported_themes": {
-        "prefix": "wc_get_core_supported_themes",
-        "body": "wc_get_core_supported_themes()",
-        "description": "WooCommerce Core Supported Themes."
-    },
-    "wc_deliver_webhook_async": {
-        "prefix": "wc_deliver_webhook_async",
-        "body": "wc_deliver_webhook_async( ${1:webhook_id}, ${2:arg} )",
-        "description": "Wrapper function to execute the `woocommerce_deliver_webhook_async` cron."
     },
     "wc_format_country_state_string": {
         "prefix": "wc_format_country_state_string",
@@ -596,7 +601,7 @@
     },
     "wc_transaction_query": {
         "prefix": "wc_transaction_query",
-        "body": "wc_transaction_query( ${1:type} )",
+        "body": "wc_transaction_query( ${1:${2:type}${3:, ${4:force}}} )",
         "description": "Run a MySQL transaction query, if supported."
     },
     "wc_get_cart_url": {
@@ -682,7 +687,7 @@
     "wc_add_number_precision": {
         "prefix": "wc_add_number_precision",
         "body": "wc_add_number_precision( ${1:value}${2:, ${3:round}} )",
-        "description": "Add precision to a number and return an int."
+        "description": "Add precision to a number and return a number."
     },
     "wc_remove_number_precision": {
         "prefix": "wc_remove_number_precision",
@@ -704,6 +709,11 @@
         "body": "wc_get_logger()",
         "description": "Get a shared logger instance."
     },
+    "wc_cleanup_logs": {
+        "prefix": "wc_cleanup_logs",
+        "body": "wc_cleanup_logs()",
+        "description": "Trigger logging cleanup using the logging class."
+    },
     "wc_print_r": {
         "prefix": "wc_print_r",
         "body": "wc_print_r( ${1:expression}${2:, ${3:return}} )",
@@ -714,11 +724,6 @@
         "body": "wc_register_default_log_handler( ${1:handlers} )",
         "description": "Registers the default log handler."
     },
-    "wc_maybe_store_user_agent": {
-        "prefix": "wc_maybe_store_user_agent",
-        "body": "wc_maybe_store_user_agent( ${1:user_login}, ${2:user} )",
-        "description": "Store user agents. Used for tracker."
-    },
     "wc_list_pluck": {
         "prefix": "wc_list_pluck",
         "body": "wc_list_pluck( ${1:list}, ${2:callback_or_field}${3:, ${4:index_key}} )",
@@ -727,7 +732,7 @@
     "wc_get_permalink_structure": {
         "prefix": "wc_get_permalink_structure",
         "body": "wc_get_permalink_structure()",
-        "description": "Get permalink settings for WooCommerce independent of the user locale."
+        "description": "Get permalink settings for things like products and taxonomies."
     },
     "wc_switch_to_site_locale": {
         "prefix": "wc_switch_to_site_locale",
@@ -779,6 +784,36 @@
         "body": "wc_is_external_resource( ${1:url} )",
         "description": "See if a resource is remote."
     },
+    "wc_is_active_theme": {
+        "prefix": "wc_is_active_theme",
+        "body": "wc_is_active_theme( ${1:theme} )",
+        "description": "See if theme\/s is activate or not."
+    },
+    "wc_cleanup_session_data": {
+        "prefix": "wc_cleanup_session_data",
+        "body": "wc_cleanup_session_data()",
+        "description": "Cleans up session data - cron callback."
+    },
+    "wc_decimal_to_fraction": {
+        "prefix": "wc_decimal_to_fraction",
+        "body": "wc_decimal_to_fraction( ${1:decimal} )",
+        "description": "Convert a decimal (e.g. 3.5) to a fraction (e.g. 7\/2)."
+    },
+    "wc_round_discount": {
+        "prefix": "wc_round_discount",
+        "body": "wc_round_discount( ${1:value}, ${2:precision} )",
+        "description": "Round discount."
+    },
+    "wc_selected": {
+        "prefix": "wc_selected",
+        "body": "wc_selected( ${1:value}, ${2:options} )",
+        "description": "Return the html selected attribute if stringified $value is found in array of stringified $options"
+    },
+    "wc_get_server_database_version": {
+        "prefix": "wc_get_server_database_version",
+        "body": "wc_get_server_database_version()",
+        "description": "Retrieves the MySQL server version. Based on $wpdb."
+    },
     "wc_get_coupon_types": {
         "prefix": "wc_get_coupon_types",
         "body": "wc_get_coupon_types()",
@@ -817,12 +852,12 @@
     "wc_string_to_bool": {
         "prefix": "wc_string_to_bool",
         "body": "wc_string_to_bool( ${1:string} )",
-        "description": "Converts a string (e.g. yes or no) to a bool."
+        "description": "Converts a string (e.g. 'yes' or 'no') to a bool."
     },
     "wc_bool_to_string": {
         "prefix": "wc_bool_to_string",
         "body": "wc_bool_to_string( ${1:bool} )",
-        "description": "Converts a bool to a string."
+        "description": "Converts a bool to a 'yes' or 'no'."
     },
     "wc_string_to_array": {
         "prefix": "wc_string_to_array",
@@ -864,6 +899,11 @@
         "body": "wc_round_tax_total( ${1:value}${2:, ${3:precision}} )",
         "description": "Round a tax amount."
     },
+    "wc_legacy_round_half_down": {
+        "prefix": "wc_legacy_round_half_down",
+        "body": "wc_legacy_round_half_down( ${1:value}, ${2:precision} )",
+        "description": "Round half down in PHP 5.2."
+    },
     "wc_format_refund_total": {
         "prefix": "wc_format_refund_total",
         "body": "wc_format_refund_total( ${1:amount} )",
@@ -898,6 +938,11 @@
         "prefix": "wc_clean",
         "body": "wc_clean( ${1:var} )",
         "description": "Clean variables using sanitize_text_field. Arrays are cleaned recursively."
+    },
+    "wc_check_invalid_utf8": {
+        "prefix": "wc_check_invalid_utf8",
+        "body": "wc_check_invalid_utf8( ${1:var} )",
+        "description": "wp_check_invalid_utf8 with recursive array support."
     },
     "wc_sanitize_textarea": {
         "prefix": "wc_sanitize_textarea",
@@ -947,7 +992,7 @@
     "wc_let_to_num": {
         "prefix": "wc_let_to_num",
         "body": "wc_let_to_num( ${1:size} )",
-        "description": "let_to_num function."
+        "description": "Notation to numbers."
     },
     "wc_date_format": {
         "prefix": "wc_date_format",
@@ -987,17 +1032,22 @@
     "wc_rgb_from_hex": {
         "prefix": "wc_rgb_from_hex",
         "body": "wc_rgb_from_hex( ${1:color} )",
-        "description": "Hex darker\/lighter\/contrast functions for colors."
+        "description": "Convert RGB to HEX."
     },
     "wc_hex_darker": {
         "prefix": "wc_hex_darker",
         "body": "wc_hex_darker( ${1:color}${2:, ${3:factor}} )",
-        "description": "Hex darker\/lighter\/contrast functions for colors."
+        "description": "Make HEX color darker."
     },
     "wc_hex_lighter": {
         "prefix": "wc_hex_lighter",
         "body": "wc_hex_lighter( ${1:color}${2:, ${3:factor}} )",
-        "description": "Hex darker\/lighter\/contrast functions for colors."
+        "description": "Make HEX color lighter."
+    },
+    "wc_hex_is_light": {
+        "prefix": "wc_hex_is_light",
+        "body": "wc_hex_is_light( ${1:color} )",
+        "description": "Determine whether a hex color is light."
     },
     "wc_light_or_dark": {
         "prefix": "wc_light_or_dark",
@@ -1019,15 +1069,15 @@
         "body": "wc_normalize_postcode( ${1:postcode} )",
         "description": "Normalize postcodes."
     },
+    "wc_format_phone_number": {
+        "prefix": "wc_format_phone_number",
+        "body": "wc_format_phone_number( ${1:phone} )",
+        "description": "Format phone numbers."
+    },
     "wc_strtoupper": {
         "prefix": "wc_strtoupper",
         "body": "wc_strtoupper( ${1:string} )",
         "description": "Wrapper for mb_strtoupper which see's if supported first."
-    },
-    "wc_format_phone_number": {
-        "prefix": "wc_format_phone_number",
-        "body": "wc_format_phone_number( ${1:tel} )",
-        "description": "format_phone function."
     },
     "wc_strtolower": {
         "prefix": "wc_strtolower",
@@ -1124,6 +1174,21 @@
         "body": "wc_array_merge_recursive_numeric()",
         "description": "Array merge and sum function."
     },
+    "wc_implode_html_attributes": {
+        "prefix": "wc_implode_html_attributes",
+        "body": "wc_implode_html_attributes( ${1:raw_attributes} )",
+        "description": "Implode and escape HTML attributes for output."
+    },
+    "wc_parse_relative_date_option": {
+        "prefix": "wc_parse_relative_date_option",
+        "body": "wc_parse_relative_date_option( ${1:raw_value} )",
+        "description": "Parse a relative date option from the settings API into a standard format."
+    },
+    "wc_sanitize_endpoint_slug": {
+        "prefix": "wc_sanitize_endpoint_slug",
+        "body": "wc_sanitize_endpoint_slug( ${1:raw_value} )",
+        "description": "Format the endpoint slug, strip out anything not allowed in a url."
+    },
     "wc_notice_count": {
         "prefix": "wc_notice_count",
         "body": "wc_notice_count( ${1:notice_type} )",
@@ -1151,7 +1216,7 @@
     },
     "wc_print_notices": {
         "prefix": "wc_print_notices",
-        "body": "wc_print_notices()",
+        "body": "wc_print_notices( ${1:return} )",
         "description": "Prints messages and errors which are stored in the session, then clears them."
     },
     "wc_print_notice": {
@@ -1168,6 +1233,11 @@
         "prefix": "wc_add_wp_error_notices",
         "body": "wc_add_wp_error_notices( ${1:errors} )",
         "description": "Add notices for WP Errors."
+    },
+    "wc_kses_notice": {
+        "prefix": "wc_kses_notice",
+        "body": "wc_kses_notice( ${1:message} )",
+        "description": "Filters out the same tags as wp_kses_post, but allows tabindex for <a> element."
     },
     "wc_get_orders": {
         "prefix": "wc_get_orders",
@@ -1376,7 +1446,7 @@
     },
     "wc_get_page_permalink": {
         "prefix": "wc_get_page_permalink",
-        "body": "wc_get_page_permalink( ${1:page} )",
+        "body": "wc_get_page_permalink( ${1:page}${2:, ${3:fallback}} )",
         "description": "Retrieve page permalink."
     },
     "wc_get_endpoint_url": {
@@ -1446,7 +1516,7 @@
     },
     "wc_placeholder_img_src": {
         "prefix": "wc_placeholder_img_src",
-        "body": "wc_placeholder_img_src()",
+        "body": "wc_placeholder_img_src( ${1:size} )",
         "description": "Get the placeholder image URL for products etc."
     },
     "wc_placeholder_img": {
@@ -1594,6 +1664,11 @@
         "body": "wc_products_array_filter_editable( ${1:product} )",
         "description": "Callback for array filter to get products the user can edit only."
     },
+    "wc_products_array_filter_readable": {
+        "prefix": "wc_products_array_filter_readable",
+        "body": "wc_products_array_filter_readable( ${1:product} )",
+        "description": "Callback for array filter to get products the user can view only."
+    },
     "wc_products_array_orderby": {
         "prefix": "wc_products_array_orderby",
         "body": "wc_products_array_orderby( ${1:products}${2:, ${3:orderby}${4:, ${5:order}}} )",
@@ -1684,6 +1759,11 @@
         "body": "wc_rest_check_manager_permissions( ${1:object}${2:, ${3:context}} )",
         "description": "Check manager permissions on REST API."
     },
+    "wc_rest_check_product_reviews_permissions": {
+        "prefix": "wc_rest_check_product_reviews_permissions",
+        "body": "wc_rest_check_product_reviews_permissions( ${1:${2:context}${3:, ${4:object_id}}} )",
+        "description": "Check product reviews permissions on REST API."
+    },
     "wc_update_product_stock": {
         "prefix": "wc_update_product_stock",
         "body": "wc_update_product_stock( ${1:product}${2:, ${3:stock_quantity}${4:, ${5:operation}}} )",
@@ -1699,10 +1779,35 @@
         "body": "wc_maybe_reduce_stock_levels( ${1:order_id} )",
         "description": "When a payment is complete, we can reduce stock levels for items within an order."
     },
+    "wc_maybe_increase_stock_levels": {
+        "prefix": "wc_maybe_increase_stock_levels",
+        "body": "wc_maybe_increase_stock_levels( ${1:order_id} )",
+        "description": "When a payment is cancelled, restore stock."
+    },
     "wc_reduce_stock_levels": {
         "prefix": "wc_reduce_stock_levels",
         "body": "wc_reduce_stock_levels( ${1:order_id} )",
-        "description": "Reduce stock levels for items within an order."
+        "description": "Reduce stock levels for items within an order, if stock has not already been reduced for the items."
+    },
+    "wc_trigger_stock_change_notifications": {
+        "prefix": "wc_trigger_stock_change_notifications",
+        "body": "wc_trigger_stock_change_notifications( ${1:order}, ${2:changes} )",
+        "description": "After stock change events, triggers emails and adds order notes."
+    },
+    "wc_increase_stock_levels": {
+        "prefix": "wc_increase_stock_levels",
+        "body": "wc_increase_stock_levels( ${1:order_id} )",
+        "description": "Increase stock levels for items within an order."
+    },
+    "wc_get_held_stock_quantity": {
+        "prefix": "wc_get_held_stock_quantity",
+        "body": "wc_get_held_stock_quantity( ${1:product}${2:, ${3:exclude_order_id}} )",
+        "description": "See how much stock is being held in pending orders."
+    },
+    "wc_get_low_stock_amount": {
+        "prefix": "wc_get_low_stock_amount",
+        "body": "wc_get_low_stock_amount( ${1:WC_Product product} )",
+        "description": "Return low stock amount to determine if notification needs to be sent"
     },
     "wc_template_redirect": {
         "prefix": "wc_template_redirect",
@@ -1734,15 +1839,30 @@
         "body": "wc_setup_product_data( ${1:post} )",
         "description": "When the_post is called, put product data into a global."
     },
-    "woocommerce_reset_loop": {
-        "prefix": "woocommerce_reset_loop",
-        "body": "woocommerce_reset_loop()",
-        "description": "Reset the loop's index and columns when we're done outputting a product loop."
+    "wc_setup_loop": {
+        "prefix": "wc_setup_loop",
+        "body": "wc_setup_loop( ${1:args} )",
+        "description": "Sets up the woocommerce_loop global from the passed args or from the main query."
     },
-    "wc_products_rss_feed": {
-        "prefix": "wc_products_rss_feed",
-        "body": "wc_products_rss_feed()",
-        "description": "Products RSS Feed."
+    "wc_reset_loop": {
+        "prefix": "wc_reset_loop",
+        "body": "wc_reset_loop()",
+        "description": "Resets the woocommerce_loop global."
+    },
+    "wc_get_loop_prop": {
+        "prefix": "wc_get_loop_prop",
+        "body": "wc_get_loop_prop( ${1:prop}${2:, ${3:default}} )",
+        "description": "Gets a property from the woocommerce_loop global."
+    },
+    "wc_set_loop_prop": {
+        "prefix": "wc_set_loop_prop",
+        "body": "wc_set_loop_prop( ${1:prop}${2:, ${3:value}} )",
+        "description": "Sets a property in the woocommerce_loop global."
+    },
+    "woocommerce_product_loop": {
+        "prefix": "woocommerce_product_loop",
+        "body": "woocommerce_product_loop()",
+        "description": "Should the WooCommerce loop be displayed?"
     },
     "wc_generator_tag": {
         "prefix": "wc_generator_tag",
@@ -1754,15 +1874,35 @@
         "body": "wc_body_class( ${1:classes} )",
         "description": "Add body classes for WC pages."
     },
+    "wc_no_js": {
+        "prefix": "wc_no_js",
+        "body": "wc_no_js()",
+        "description": "NO JS handling."
+    },
     "wc_product_cat_class": {
         "prefix": "wc_product_cat_class",
         "body": "wc_product_cat_class( ${1:${2:class}${3:, ${4:category}}} )",
         "description": "Display the classes for the product cat div."
     },
+    "wc_get_default_products_per_row": {
+        "prefix": "wc_get_default_products_per_row",
+        "body": "wc_get_default_products_per_row()",
+        "description": "Get the default columns setting - this is how many products will be shown per row in loops."
+    },
+    "wc_get_default_product_rows_per_page": {
+        "prefix": "wc_get_default_product_rows_per_page",
+        "body": "wc_get_default_product_rows_per_page()",
+        "description": "Get the default rows setting - this is how many product rows will be shown in loops."
+    },
+    "wc_reset_product_grid_settings": {
+        "prefix": "wc_reset_product_grid_settings",
+        "body": "wc_reset_product_grid_settings()",
+        "description": "Reset the product grid settings when a new theme is activated."
+    },
     "wc_get_loop_class": {
         "prefix": "wc_get_loop_class",
         "body": "wc_get_loop_class()",
-        "description": "Get classname for loops based on $woocommerce_loop global."
+        "description": "Get classname for woocommerce loops."
     },
     "wc_get_product_cat_class": {
         "prefix": "wc_get_product_cat_class",
@@ -1774,10 +1914,80 @@
         "body": "wc_product_post_class( ${1:classes}${2:, ${3:class}${4:, ${5:post_id}}} )",
         "description": "Adds extra post classes for products."
     },
+    "wc_get_product_taxonomy_class": {
+        "prefix": "wc_get_product_taxonomy_class",
+        "body": "wc_get_product_taxonomy_class( ${1:term_ids}, ${2:taxonomy} )",
+        "description": "Get product taxonomy HTML classes."
+    },
+    "wc_get_product_class": {
+        "prefix": "wc_get_product_class",
+        "body": "wc_get_product_class( ${1:${2:class}${3:, ${4:product_id}}} )",
+        "description": "Retrieves the classes for the post div as an array."
+    },
+    "wc_product_class": {
+        "prefix": "wc_product_class",
+        "body": "wc_product_class( ${1:${2:class}${3:, ${4:product_id}}} )",
+        "description": "Display the classes for the product div."
+    },
     "wc_query_string_form_fields": {
         "prefix": "wc_query_string_form_fields",
         "body": "wc_query_string_form_fields( ${1:${2:values}${3:, ${4:exclude}${5:, ${6:current_key}${7:, ${8:return}}}}} )",
         "description": "Outputs hidden form inputs for each query string variable."
+    },
+    "wc_terms_and_conditions_page_id": {
+        "prefix": "wc_terms_and_conditions_page_id",
+        "body": "wc_terms_and_conditions_page_id()",
+        "description": "Get the terms and conditons page ID."
+    },
+    "wc_privacy_policy_page_id": {
+        "prefix": "wc_privacy_policy_page_id",
+        "body": "wc_privacy_policy_page_id()",
+        "description": "Get the privacy policy page ID."
+    },
+    "wc_terms_and_conditions_checkbox_enabled": {
+        "prefix": "wc_terms_and_conditions_checkbox_enabled",
+        "body": "wc_terms_and_conditions_checkbox_enabled()",
+        "description": "See if the checkbox is enabled or not based on the existance of the terms page and checkbox text."
+    },
+    "wc_get_terms_and_conditions_checkbox_text": {
+        "prefix": "wc_get_terms_and_conditions_checkbox_text",
+        "body": "wc_get_terms_and_conditions_checkbox_text()",
+        "description": "Get the terms and conditons checkbox text, if set."
+    },
+    "wc_get_privacy_policy_text": {
+        "prefix": "wc_get_privacy_policy_text",
+        "body": "wc_get_privacy_policy_text( ${1:type} )",
+        "description": "Get the privacy policy text, if set."
+    },
+    "wc_terms_and_conditions_checkbox_text": {
+        "prefix": "wc_terms_and_conditions_checkbox_text",
+        "body": "wc_terms_and_conditions_checkbox_text()",
+        "description": "Output t&c checkbox text."
+    },
+    "wc_terms_and_conditions_page_content": {
+        "prefix": "wc_terms_and_conditions_page_content",
+        "body": "wc_terms_and_conditions_page_content()",
+        "description": "Output t&c page's content (if set). The page can be set from checkout settings."
+    },
+    "wc_checkout_privacy_policy_text": {
+        "prefix": "wc_checkout_privacy_policy_text",
+        "body": "wc_checkout_privacy_policy_text()",
+        "description": "Render privacy policy text on the checkout."
+    },
+    "wc_registration_privacy_policy_text": {
+        "prefix": "wc_registration_privacy_policy_text",
+        "body": "wc_registration_privacy_policy_text()",
+        "description": "Render privacy policy text on the register forms."
+    },
+    "wc_privacy_policy_text": {
+        "prefix": "wc_privacy_policy_text",
+        "body": "wc_privacy_policy_text( ${1:type} )",
+        "description": "Output privacy policy text. This is custom text which can be added via the customizer\/privacy settings section."
+    },
+    "wc_replace_policy_page_link_placeholders": {
+        "prefix": "wc_replace_policy_page_link_placeholders",
+        "body": "wc_replace_policy_page_link_placeholders( ${1:text} )",
+        "description": "Replaces placeholders with links to WooCommerce policy pages."
     },
     "woocommerce_content": {
         "prefix": "woocommerce_content",
@@ -1914,6 +2124,11 @@
         "body": "woocommerce_show_product_thumbnails()",
         "description": "Output the product thumbnails."
     },
+    "wc_get_gallery_image_html": {
+        "prefix": "wc_get_gallery_image_html",
+        "body": "wc_get_gallery_image_html( ${1:attachment_id}${2:, ${3:main_image}} )",
+        "description": "Get HTML for a gallery image."
+    },
     "woocommerce_output_product_data_tabs": {
         "prefix": "woocommerce_output_product_data_tabs",
         "body": "woocommerce_output_product_data_tabs()",
@@ -1994,11 +2209,6 @@
         "body": "woocommerce_product_additional_information_tab()",
         "description": "Output the attributes tab content."
     },
-    "woocommerce_product_reviews_tab": {
-        "prefix": "woocommerce_product_reviews_tab",
-        "body": "woocommerce_product_reviews_tab()",
-        "description": "Output the reviews tab content."
-    },
     "woocommerce_default_product_tabs": {
         "prefix": "woocommerce_default_product_tabs",
         "body": "woocommerce_default_product_tabs( ${1:tabs} )",
@@ -2056,7 +2266,7 @@
     },
     "woocommerce_shipping_calculator": {
         "prefix": "woocommerce_shipping_calculator",
-        "body": "woocommerce_shipping_calculator()",
+        "body": "woocommerce_shipping_calculator( ${1:button_text} )",
         "description": "Output the cart shipping calculator."
     },
     "woocommerce_cart_totals": {
@@ -2124,10 +2334,30 @@
         "body": "woocommerce_products_will_display()",
         "description": "Check if we will be showing products or not (and not sub-categories only)."
     },
+    "woocommerce_get_loop_display_mode": {
+        "prefix": "woocommerce_get_loop_display_mode",
+        "body": "woocommerce_get_loop_display_mode()",
+        "description": "See what is going to display in the loop."
+    },
+    "woocommerce_maybe_show_product_subcategories": {
+        "prefix": "woocommerce_maybe_show_product_subcategories",
+        "body": "woocommerce_maybe_show_product_subcategories( ${1:loop_html} )",
+        "description": "Maybe display categories before, or instead of, a product loop."
+    },
     "woocommerce_product_subcategories": {
         "prefix": "woocommerce_product_subcategories",
         "body": "woocommerce_product_subcategories( ${1:args} )",
+        "description": "This is a legacy function which used to check if we needed to display subcats and then output them. It was called by templates."
+    },
+    "woocommerce_output_product_categories": {
+        "prefix": "woocommerce_output_product_categories",
+        "body": "woocommerce_output_product_categories( ${1:args} )",
         "description": "Display product sub categories as thumbnails."
+    },
+    "woocommerce_get_product_subcategories": {
+        "prefix": "woocommerce_get_product_subcategories",
+        "body": "woocommerce_get_product_subcategories( ${1:parent_id} )",
+        "description": "Get (and cache) product subcategories."
     },
     "woocommerce_subcategory_thumbnail": {
         "prefix": "woocommerce_subcategory_thumbnail",
@@ -2232,7 +2462,7 @@
     "wc_no_products_found": {
         "prefix": "wc_no_products_found",
         "body": "wc_no_products_found()",
-        "description": "Show no products found message."
+        "description": "Handles the loop when no products were found\/no product exist."
     },
     "wc_get_email_order_items": {
         "prefix": "wc_get_email_order_items",
@@ -2294,6 +2524,46 @@
         "body": "wc_page_noindex()",
         "description": "Disable search engines indexing core, dynamic, cart\/checkout pages."
     },
+    "wc_get_theme_slug_for_templates": {
+        "prefix": "wc_get_theme_slug_for_templates",
+        "body": "wc_get_theme_slug_for_templates()",
+        "description": "Get a slug identifying the current theme."
+    },
+    "wc_get_formatted_cart_item_data": {
+        "prefix": "wc_get_formatted_cart_item_data",
+        "body": "wc_get_formatted_cart_item_data( ${1:cart_item}${2:, ${3:flat}} )",
+        "description": "Gets and formats a list of cart item data + variations for display on the frontend."
+    },
+    "wc_get_cart_remove_url": {
+        "prefix": "wc_get_cart_remove_url",
+        "body": "wc_get_cart_remove_url( ${1:cart_item_key} )",
+        "description": "Gets the url to remove an item from the cart."
+    },
+    "wc_get_cart_undo_url": {
+        "prefix": "wc_get_cart_undo_url",
+        "body": "wc_get_cart_undo_url( ${1:cart_item_key} )",
+        "description": "Gets the url to re-add an item into the cart."
+    },
+    "woocommerce_output_all_notices": {
+        "prefix": "woocommerce_output_all_notices",
+        "body": "woocommerce_output_all_notices()",
+        "description": "Outputs all queued notices on WC pages."
+    },
+    "wc_products_rss_feed": {
+        "prefix": "wc_products_rss_feed",
+        "body": "wc_products_rss_feed()",
+        "description": "Products RSS Feed."
+    },
+    "woocommerce_reset_loop": {
+        "prefix": "woocommerce_reset_loop",
+        "body": "woocommerce_reset_loop()",
+        "description": "Reset the loop's index and columns when we're done outputting a product loop."
+    },
+    "woocommerce_product_reviews_tab": {
+        "prefix": "woocommerce_product_reviews_tab",
+        "body": "woocommerce_product_reviews_tab()",
+        "description": "Output the reviews tab content."
+    },
     "wc_get_object_terms": {
         "prefix": "wc_get_object_terms",
         "body": "wc_get_object_terms( ${1:object_id}, ${2:taxonomy}${3:, ${4:field}${5:, ${6:index_key}}} )",
@@ -2337,17 +2607,17 @@
     "wc_taxonomy_metadata_migrate_data": {
         "prefix": "wc_taxonomy_metadata_migrate_data",
         "body": "wc_taxonomy_metadata_migrate_data( ${1:wp_db_version}, ${2:wp_current_db_version} )",
-        "description": "Migrate data from WC term meta to WP term meta"
+        "description": "Migrate data from WC term meta to WP term meta."
     },
     "update_woocommerce_term_meta": {
         "prefix": "update_woocommerce_term_meta",
         "body": "update_woocommerce_term_meta( ${1:term_id}, ${2:meta_key}, ${3:meta_value}${4:, ${5:prev_value}} )",
-        "description": "WooCommerce Term Meta API"
+        "description": "WooCommerce Term Meta API."
     },
     "add_woocommerce_term_meta": {
         "prefix": "add_woocommerce_term_meta",
         "body": "add_woocommerce_term_meta( ${1:term_id}, ${2:meta_key}, ${3:meta_value}${4:, ${5:unique}} )",
-        "description": "WooCommerce Term Meta API"
+        "description": "WooCommerce Term Meta API."
     },
     "delete_woocommerce_term_meta": {
         "prefix": "delete_woocommerce_term_meta",
@@ -2362,7 +2632,7 @@
     "wc_reorder_terms": {
         "prefix": "wc_reorder_terms",
         "body": "wc_reorder_terms( ${1:the_term}, ${2:next_id}, ${3:taxonomy}${4:, ${5:index}${6:, ${7:terms}}} )",
-        "description": "Move a term before the a\tgiven element of its hierarchy level."
+        "description": "Move a term before the a given element of its hierarchy level."
     },
     "wc_set_term_order": {
         "prefix": "wc_set_term_order",
@@ -2434,6 +2704,16 @@
         "body": "wc_customer_bought_product( ${1:customer_email}, ${2:user_id}, ${3:product_id} )",
         "description": "Checks if a user (by email or ID or both) has bought an item."
     },
+    "wc_current_user_has_role": {
+        "prefix": "wc_current_user_has_role",
+        "body": "wc_current_user_has_role( ${1:role} )",
+        "description": "Checks if the current user has a role."
+    },
+    "wc_user_has_role": {
+        "prefix": "wc_user_has_role",
+        "body": "wc_user_has_role( ${1:user}, ${2:role} )",
+        "description": "Checks if a user has a role."
+    },
     "wc_customer_has_capability": {
         "prefix": "wc_customer_has_capability",
         "body": "wc_customer_has_capability( ${1:allcaps}, ${2:caps}, ${3:args} )",
@@ -2472,7 +2752,7 @@
     "wc_reset_order_customer_id_on_deleted_user": {
         "prefix": "wc_reset_order_customer_id_on_deleted_user",
         "body": "wc_reset_order_customer_id_on_deleted_user( ${1:user_id} )",
-        "description": "Reset _customer_user on orders when a user is deleted."
+        "description": "Reset customer ID on orders when a user is deleted."
     },
     "wc_review_is_from_verified_owner": {
         "prefix": "wc_review_is_from_verified_owner",
@@ -2514,10 +2794,60 @@
         "body": "wc_user_search_columns( ${1:search_columns} )",
         "description": "Add support for searching by display_name."
     },
+    "wc_delete_user_data": {
+        "prefix": "wc_delete_user_data",
+        "body": "wc_delete_user_data( ${1:user_id} )",
+        "description": "When a user is deleted in WordPress, delete corresponding WooCommerce data."
+    },
+    "wc_maybe_store_user_agent": {
+        "prefix": "wc_maybe_store_user_agent",
+        "body": "wc_maybe_store_user_agent( ${1:user_login}, ${2:user} )",
+        "description": "Store user agents. Used for tracker."
+    },
+    "wc_user_logged_in": {
+        "prefix": "wc_user_logged_in",
+        "body": "wc_user_logged_in( ${1:user_login}, ${2:user} )",
+        "description": "Update logic triggered on login."
+    },
+    "wc_current_user_is_active": {
+        "prefix": "wc_current_user_is_active",
+        "body": "wc_current_user_is_active()",
+        "description": "Update when the user was last active."
+    },
+    "wc_update_user_last_active": {
+        "prefix": "wc_update_user_last_active",
+        "body": "wc_update_user_last_active( ${1:user_id} )",
+        "description": "Set the user last active timestamp to now."
+    },
+    "wc_webhook_process_delivery": {
+        "prefix": "wc_webhook_process_delivery",
+        "body": "wc_webhook_process_delivery( ${1:webhook}, ${2:arg} )",
+        "description": "Process webhook delivery."
+    },
+    "wc_deliver_webhook_async": {
+        "prefix": "wc_deliver_webhook_async",
+        "body": "wc_deliver_webhook_async( ${1:webhook_id}, ${2:arg} )",
+        "description": "Wrapper function to execute the `woocommerce_deliver_webhook_async` cron."
+    },
+    "wc_is_webhook_valid_topic": {
+        "prefix": "wc_is_webhook_valid_topic",
+        "body": "wc_is_webhook_valid_topic( ${1:topic} )",
+        "description": "Check if the given topic is a valid webhook topic, a topic is valid if:"
+    },
     "wc_get_webhook_statuses": {
         "prefix": "wc_get_webhook_statuses",
         "body": "wc_get_webhook_statuses()",
         "description": "Get Webhook statuses."
+    },
+    "wc_load_webhooks": {
+        "prefix": "wc_load_webhooks",
+        "body": "wc_load_webhooks()",
+        "description": "Load webhooks."
+    },
+    "wc_get_webhook": {
+        "prefix": "wc_get_webhook",
+        "body": "wc_get_webhook( ${1:id} )",
+        "description": "Get webhook."
     },
     "wc_register_widgets": {
         "prefix": "wc_register_widgets",
@@ -2553,6 +2883,11 @@
         "prefix": "wc_save_order_items",
         "body": "wc_save_order_items( ${1:order_id}, ${2:items} )",
         "description": "Save order items. Uses the CRUD."
+    },
+    "wc_render_action_buttons": {
+        "prefix": "wc_render_action_buttons",
+        "body": "wc_render_action_buttons( ${1:actions} )",
+        "description": "Get HTML for some action buttons. Used in list tables."
     },
     "woocommerce_wp_text_input": {
         "prefix": "woocommerce_wp_text_input",
