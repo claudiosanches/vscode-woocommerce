@@ -2943,5 +2943,15 @@
         "prefix": "wc_importer_wordpress_mappings",
         "body": "wc_importer_wordpress_mappings( ${1:mappings} )",
         "description": "Add mappings for WordPress tables."
+    },
+    "woocommerce_widget_shopping_cart_subtotal": {
+        "prefix": "woocommerce_widget_shopping_cart_subtotal",
+        "body": "woocommerce_widget_shopping_cart_subtotal()",
+        "description": "Output to view cart subtotal."
+    },
+    "wc_translate_user_roles": {
+        "prefix": "wc_translate_user_roles",
+        "body": "wc_translate_user_roles( ${1:translation}, ${2:text}, ${3:context}, ${4:domain} )",
+        "description": "Translate WC roles using the woocommerce textdomain."
     }
 }
