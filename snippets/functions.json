@@ -651,7 +651,7 @@
     },
     "wc_get_shipping_method_count": {
         "prefix": "wc_get_shipping_method_count",
-        "body": "wc_get_shipping_method_count( ${1:include_legacy} )",
+        "body": "wc_get_shipping_method_count( ${1:include_legacy}${2:, ${3:enabled_only}} )",
         "description": "Gets number of shipping methods currently enabled. Used to identify if"
     },
     "wc_set_time_limit": {
