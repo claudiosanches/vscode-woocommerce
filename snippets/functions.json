@@ -516,7 +516,7 @@
     },
     "wc_setcookie": {
         "prefix": "wc_setcookie",
-        "body": "wc_setcookie( ${1:name}, ${2:value}${3:, ${4:expire}${5:, ${6:secure}}} )",
+        "body": "wc_setcookie( ${1:name}, ${2:value}${3:, ${4:expire}${5:, ${6:secure}}${7:, ${8:httponly}}} )",
         "description": "Set a cookie - wrapper for setcookie using WP constants."
     },
     "get_woocommerce_api_url": {
@@ -651,8 +651,8 @@
     },
     "wc_get_shipping_method_count": {
         "prefix": "wc_get_shipping_method_count",
-        "body": "wc_get_shipping_method_count( ${1:include_legacy} )",
-        "description": "Gets number of shipping methods currently enabled. Used to identify if"
+        "body": "wc_get_shipping_method_count( ${1:include_legacy}${2:, ${3:enabled_only}} )",
+        "description": "Gets number of shipping methods currently enabled. Used to identify if shipping is configured"
     },
     "wc_set_time_limit": {
         "prefix": "wc_set_time_limit",
@@ -1201,7 +1201,7 @@
     },
     "wc_add_notice": {
         "prefix": "wc_add_notice",
-        "body": "wc_add_notice( ${1:message}${2:, ${3:notice_type}} )",
+        "body": "wc_add_notice( ${1:message}${2:, ${3:notice_type}}${4:, ${5:data}} )",
         "description": "Add and store a notice."
     },
     "wc_set_notices": {
@@ -1221,7 +1221,7 @@
     },
     "wc_print_notice": {
         "prefix": "wc_print_notice",
-        "body": "wc_print_notice( ${1:message}${2:, ${3:notice_type}} )",
+        "body": "wc_print_notice( ${1:message}${2:, ${3:notice_type}}${4:, ${5:data}} )",
         "description": "Print a single notice immediately."
     },
     "wc_get_notices": {
@@ -1521,7 +1521,7 @@
     },
     "wc_placeholder_img": {
         "prefix": "wc_placeholder_img",
-        "body": "wc_placeholder_img( ${1:size} )",
+        "body": "wc_placeholder_img( ${1:size}${2:, ${3:attr}} )",
         "description": "Get the placeholder image."
     },
     "wc_get_formatted_variation": {
@@ -2841,7 +2841,7 @@
     },
     "wc_load_webhooks": {
         "prefix": "wc_load_webhooks",
-        "body": "wc_load_webhooks()",
+        "body": "wc_load_webhooks( ${1:status}${2:, ${3:topic}} )",
         "description": "Load webhooks."
     },
     "wc_get_webhook": {
@@ -2943,5 +2943,15 @@
         "prefix": "wc_importer_wordpress_mappings",
         "body": "wc_importer_wordpress_mappings( ${1:mappings} )",
         "description": "Add mappings for WordPress tables."
+    },
+    "woocommerce_widget_shopping_cart_subtotal": {
+        "prefix": "woocommerce_widget_shopping_cart_subtotal",
+        "body": "woocommerce_widget_shopping_cart_subtotal()",
+        "description": "Output to view cart subtotal."
+    },
+    "wc_translate_user_roles": {
+        "prefix": "wc_translate_user_roles",
+        "body": "wc_translate_user_roles( ${1:translation}, ${2:text}, ${3:context}, ${4:domain} )",
+        "description": "Translate WC roles using the woocommerce textdomain."
     }
 }
