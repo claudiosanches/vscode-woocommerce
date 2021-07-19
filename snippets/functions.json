@@ -2841,7 +2841,7 @@
     },
     "wc_load_webhooks": {
         "prefix": "wc_load_webhooks",
-        "body": "wc_load_webhooks()",
+        "body": "wc_load_webhooks( ${1:status}${2:, ${3:topic}} )",
         "description": "Load webhooks."
     },
     "wc_get_webhook": {
