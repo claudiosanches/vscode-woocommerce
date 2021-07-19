@@ -1521,7 +1521,7 @@
     },
     "wc_placeholder_img": {
         "prefix": "wc_placeholder_img",
-        "body": "wc_placeholder_img( ${1:size} )",
+        "body": "wc_placeholder_img( ${1:size}${2:, ${3:attr}} )",
         "description": "Get the placeholder image."
     },
     "wc_get_formatted_variation": {
