@@ -1221,7 +1221,7 @@
     },
     "wc_print_notice": {
         "prefix": "wc_print_notice",
-        "body": "wc_print_notice( ${1:message}${2:, ${3:notice_type}} )",
+        "body": "wc_print_notice( ${1:message}${2:, ${3:notice_type}}${4:, ${5:data}} )",
         "description": "Print a single notice immediately."
     },
     "wc_get_notices": {
