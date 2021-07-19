@@ -1201,7 +1201,7 @@
     },
     "wc_add_notice": {
         "prefix": "wc_add_notice",
-        "body": "wc_add_notice( ${1:message}${2:, ${3:notice_type}} )",
+        "body": "wc_add_notice( ${1:message}${2:, ${3:notice_type}}${4:, ${5:data}} )",
         "description": "Add and store a notice."
     },
     "wc_set_notices": {
